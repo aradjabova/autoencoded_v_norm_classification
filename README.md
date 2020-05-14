@@ -1,113 +1,266 @@
 
-#  Final Project Requirements
+<a href="https://colab.research.google.com/github/aradjabova/dsc-capstone-project-v2-online-ds-ft-120919/blob/master/ReadME.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-## Introduction
+# Experiment: Autoencoded Images  Vs. Original Images for Classification
 
-In this lesson, we'll discuss the requirements and expectations for our **Capstone Project**!
-
-## Objectives
-
-You will be able to:
-
-* Describe all required aspects of the final project
-* Describe all required deliverables
-* Describe what constitutes a successful project
-* Describe what the experience of the project review should be like
+Created a trial code with MNIST dataset and then used the kaggle intel image classificaiton dataset for experiment.
+https://www.kaggle.com/puneet6060/intel-image-classification/version/2#20060.jpg 
 
 
-### Final Project Requirements
-
-Congratulations on making it to the final project! It's been a long journey, but we can finally see the light at the end of the tunnel!
-
-<center><img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-capstone-project-v2/master/end-of-tunnel.gif'>
-<strong><em>Actual Footage of you seeing the light at the end of the tunnel</strong></em>
-</center>
-
-Now that you've learned everything we have to teach you, it's time to show off and flex your data science muscles with your own **_Capstone Project_**! This project will allow you to showcase everything you've learned as a data scientist to by completing a professional-level data science project of your choosing. This project will be significantly larger than any project you've completed so far, and will be the crown jewel of your portfolio. A strong capstone project is the single most important thing you can do to get the attention of potential employers, so be prepared to put as much effort into this project as possible--the results are **_worth it!_**
-
-<center><img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-capstone-project-v2/master/milkshake.gif'>
-<strong><em>Your <s>milkshake</s> portfolio brings all the <s>boys</s> employers to <s>the yard</s> your inbox! </strong></em>
-</center>
-
-Let's take a look at the project requirements.
-
-### Topic requirements
-The projects are in a domain of your choosing.  Your project does not have to answer just one question, but may try to answer multiple questions in a domain, or subsequent questions.  (e.g. Now that we know _X_, what's the next question that comes from this?)  When choosing a topic, try to think through the "So what?" of your question.  
-
-* What are the possible outcomes you think you will find? 
-* How could a company or individual make use of your findings to benefit them?  What about your findings are _actionable_?
-
-You're completely free to choose any project topic that interests you. However, the project scope must be end-to-end, from data sourcing and cleaning all the way through tuning and analysis of your trained model(s). 
-
-Make sure to plan in advance for feasibility of the question in the time allowed--consider the following questions when selecting your project topic:
-
-* What version this question would allow me to find an answer in a feasible amount of time?
-* What version of this question would allow me/motivate me to work on this problem even after completing Flatiron School?
-
-### Technical Requirements
-
-Your project must meet the following technical requirements:
-
-1. **_No Off-The-Shelf Datasets_**. This project is a chance for you to highlight your critical thinking and data gathering skills by finding the perfect dataset to answer your question. If a pre-existing dataset exists that you'd like to use, it is okay to use it in your project. However, you should consider combining it with other existing sources of data, modifying the dataset through feature engineering. The goal here is to showcase your ability to find and work with data, so just grabbing Boston Housing Dataset or the MNIST dataset is out of the question. 
-
-2. **_Strong Data Exploration, with at least 4 relevant data visualizations._**  Think of this project as a way for your to showcase your best possible work in every area that matters. There are few skills that impress employers more than the ability to dive into a new dataset and produce engaging visualizations that communicate important information. For this project, anything worth knowing is worth visualizing. Consider all that you have learned, and don't be afraid to dig into more advanced visualization libraries like seaborn to see what you make! You should make use of visualizations whenever possible during this project, not just during the Data Exploration phase--for instance, consider visualizing your confusion matrices rather than just printing them out as text!
-
-3. **_Makes use of Supervised Learning_**. This requirement dovetails with having a well-defined question, because you'll make use of supervised learning to find the answer! It is both acceptable and encouraged to make use of **_Unsupervised Learning_** techniques as needed in your project (for instance, segmentation with clustering algorithms), but the supervised learning should play a central role in answering your question. 
-
-4. **_Explicitly makes use of a Data Science Process such as OSEMN or CRISP-DM_**. This part is fairly straightforward--you should select a Data Science Process to use and then use this to give structure to your project. Each section should be clearly delineated in your Jupyter Notebook.  
-
-5. **_A well-defined question, with a well-defined answer._** Your project should clearly state the question you are trying to answer, and provide any background context needed to understand it. For instance, if you are trying to detect fault lines using Earthquake data, you should provide a brief primer on both the topic and your dataset so that the reader can better understand your topic and approach.  Similarly, the findings of your project should be clearly communicated. Do not just tell your audience the final accuracy of your models--be sure to answer "big picture" questions as well. For instance--why are these findings important or useful? Would you recommend shipping this model to production, or is more work needed? Who are these findings useful to, and why should they care?  **_NOTE:_** Inconclusive results are okay--from a purely scientific perspective, they are no more or less important or valuable than any other kinds of results. If your results are inconclusive, you should discuss what your next steps would be from there. For instance, what do you think it would take to get conclusive results--more data? Different data that was unavailable? Both? 
+### Experiment: Do augmented images have better image classification results?
 
 
-## Deliverables
 
-For online students, the deliverables for this project consist of the following three components:
 
-1. A Jupyter notebook for a presentation.
-  * The Jupyter notebook will have two components:
-    1. An **_Abstract_** section that briefly explains your problem, your methodology, and your findings, and business recommendations as a result of your findings. This section should be 1-2 paragraphs long.  
-    2. The technical analysis for a data science audience. This detailed technical analysis should explicitly follow a Data Science Process as outlined in the previous section. It should be well-formatted and organized, and should contain all code, visualizations, and detailed explanations/analysis.
+## Trial dataset MNIST
+
+<details>
+  <summary>Click to read about the trail dataset! </summary>
+  
+  ## Obtaining
+  * We have gathered the data from https://keras.io/api/datasets/mnist/
+  * This is a dataset of 60,000 28x28 grayscale images of the 10 digits, along with a test set of 10,000 images.
     
-2. An organized **README.md** file in the GitHub repository containing your project code that describes the contents of the repository. This file should be the source of information for navigating through all the code in your repository. 
+
+<img  src="https://drive.google.com/uc?id=1m58DO3twhgExsLLVtayU4MH2Rzzb3XCT">
+
+
+  * Fourtunately, the dataset has plenty of images and there was no cleaning, creating required.
+
+Using the OSEM process we will build an autoencoder and an image classifier.
+
+### Autoencoder
+  * Is used to condense the information in the images
+  * Condensing the information allows the autoencoder learn the most important parts of an image
+  * Once the images are condensed the decoder will use the learned information to expand the images to the original size
+
+### Image Classification
+ * Is created to teach the machine to predict what the image is showing
+
+This is an unbalanced multi-class classification problem; thought because we have plenty of each image, we will not need to create more images.
+
+</details>
+
+
+<details>
+  <summary>Click to read about the trail dataset autoencoded! </summary>
+  
+  ## Autoencoder
     
-3. A blog post showcasing your project, with a focus on your methodology and findings. A well-written blog post about your project will probably be the first thing most recruiters and hiring managers see, so really take the time to polish up this blog post and explain your project, methodology, and findings/business recommendations in a clear, concise manner. This blog post should cover everything important about your project, but remember that your audience for this blog post will largely be non-technical. Your blog post should definitely contain visualizations, code snippets, and anything else you find important, but don't get bogged down trying to explain highly technical concepts. Your blog post should provide a link to the Github repository containing your actual project, for people that want to really dive into the technical aspects of your project.
-* Refer back to the [Blogging Guidelines](https://github.com/learn-co-curriculum/dsc-welcome-blogging) for the technical requirements and blog ideas.
+#### Standard Autoencoder
+<img  src="https://drive.google.com/uc?id=1DR6ccJJwfJOz4rJuYjj9v5mZ4-UCsP6Q">
 
-Note: On-campus students may have different deliverables, please speak with your instructor.
-
-### Rubric 
-
-Online students can find a PDF of the rubric for the final capstone project [here](https://github.com/learn-co-curriculum/dsc-capstone-project-v2/blob/master/capstone_project_rubric.pdf). _Note: On-campus students may have different requirements, please speak with your instructor._
+  * Here you can see that the original images (top) that are inputed are condensed and then reblown into blurry images of it self (bottom).
 
 
-## Final Project Proposals (2 project ideas)
+#### Noisy Autoencoder
+<img  src="https://drive.google.com/uc?id=1b6YiWQBs7G2L83gpIdY5g5GQPD04E_Ki">
 
-Selecting the right topic and selecting a problem with the appropriate scope can make or break a good project before you even begin. When starting, try to think up at least 2 different project ideas to explore that you can discuss with your instructor.  Consider the following questions when coming up with your project. 
+  * Here we can see that the "noisy" input (bottom), meaning having additional pixels added, outputs clean images simlar to the original images
 
-### Project Ideation Questions
+</details>
 
-1. What question/questions are you trying to solve?
-  * What are the outcomes you think you will find (could use mutually exclusive collectively exhaustive for this)? Why do they matter?
-  * How would a person or business take action upon learning the results of your project? How will your findings be _useful_?
-  * What version this question would allow me to find an answer in 2-3 days?
-  * What version of this question would allow me/motivate me to work on this problem even after completing Flatiron School?
+<details>
+  <summary>Click to read about the trail dataset image classification! </summary>
+  
+  ## Classification
+    
+#### Simple CNN (Central Neural Network) for Image Classification
 
-2. What are some data sources that would allow you to answer this?
-  * What is the ideal data you would hope to gather to answer this question?  
-  * Potentially missing data, that could cause omitted variable bias?
-3. Is this a classification task? A regression task? Both?
-4. What are the challenges or obstacles you foresee with this project?
-5. What are your next steps moving forward?
+When creating a simple image classification there are different methods of making sure how well the machine is learning. 
 
-### Example Student Project
+<img  src="https://drive.google.com/uc?id=1Phv01zz-TsENuX5xDUz31r9s5dW6GvU7">
+<img  src="https://drive.google.com/uc?id=1r7w9cMA2P5cbNLzT__JaaZ1mgusWFTQN">
 
-To give you a frame of reference, take a look at this amazing [technical report](https://github.com/paulinaczheng/twitter_flu_tracking) from a previous student that used tweet data to predict the weekly number of flu cases during flu season. Pay attention to how well structured the project is, and how much she relies on great visualizations to tell her story for her. Your explanations don't have to be wordy--a visualization is worth a thousand words!
+  * These show how well the model has been learning. The higher the accuracy during training and validation dictates better results
+  * Lower loss shows that the amount of error is decreasing
+
+#### Confusion Matrix
+
+<img  src="https://drive.google.com/uc?id=1SVQ0WGCXWRKc-4RhvV0t4LlBFgfXi9_f" align="middle">
+
+  * These are a great visual representation of how well the model is performing and learning.
+  * The diagnoal line of the confusion matrix indicates the accurately labeled images.
+
+#### Classification Report
+<img  src="https://drive.google.com/uc?id=1reDBGIK1_qEi3qW9D0V-ePj3k0QzqgfC" >
+
+* Another way of seeing how well the images are being identified.
+
+</details>
+
+
+##### Conclusions:
+
+
+The MNIST dataset is used in order to complete the trial code. The evaluations of the models are a good indication of the experiment goal results.
+
+
+
+# Control
+<details>
+  <summary>Click to read about modeling the control data! </summary>
+  
+  ## Dataset
+  The kaggle data is a dataset of images of building, forest, glacier, mountain, sea and street.
+
+   <img style="float: center;" src="https://drive.google.com/uc?id=1tpWgffkIFDqwUr13JlCK8UrgTHmZAjoz" >
+
+There is a decent amount of images available for each category, but it may impact the amount that can be learned from the current amount of images.
+
+</details>
+
+  <details>
+    <summary>Click to view examples of the images in the dataset
+    </summary>
+   <img style="float: center;" src="https://drive.google.com/uc?id=1uW7i_tVnzfgaX2BxNgtGIGPxc95Xvpe5" width="400" height="200" >
+   <img style="float: center;" src="https://drive.google.com/uc?id=1EXl96CvTaTP0xOrmMunCnUVtOt6Ok3d5" width="400" height="200" >
+   <img style="float: center;" src="https://drive.google.com/uc?id=1w3WeUWl9PEYkyzdKFXdoiHouYo4IE0Bk" width="400" height="200" >
+   <img style="float: center;" src="https://drive.google.com/uc?id=1OjqQwdxPKO6cLeVY1hlUOu_yThE27IEW" width="400" height="200" >
+   <img style="float: center;" src="https://drive.google.com/uc?id=1mVKzKjt64HxZiC-O534MsusmoUOcQOnY" width="400" height="200">
+   <img style="float: center;" src="https://drive.google.com/uc?id=1BUKUx4cTK0GS92dawf2nCkSilncdvM-R" width="400" height="200">
+   </details>
+
+<details>
+<summary>Click to view the control image autoencoder!</summary>
+
+<img  src="https://drive.google.com/uc?id=1sdql_R9KtWm3nkFY4G6D9Zzqzu2zp-8N">
+
+<img  src="https://drive.google.com/uc?id=1XjcRJuNTI7B7AsZrNIg4bRJ7_yuqr4lV" width="300" height="400">
+<img  src="https://drive.google.com/uc?id=1L-FxmT7JPv7IhhABZ3ceiI_f_5o8HK8f" width="300" height="400">
+
+</details>
+
+</details>  
+
+<details>
+  <summary>Click to read about modeling the control data image classification! </summary>
+  
+  ## Modeling
+  To model our data effectively; we created a image classifier with few simple layers.
+
+   <img style="float: center;" src="https://drive.google.com/uc?id=10FL_C81awujhuK9IfHnsxGxTEYqFcKiw" >
+
+  * Conv2D 
+
+    * Scans the image and takes each pixel value in a 3x3 (or 4x4, depends on setting) part and multiplies it by a certain weight, adds the numbers and uses that number as the value of the output image of that pixel
+    * Depending on the weights, the output image can be blurred, brighter, darker, etc. (basicallu, slight photoshop)
+
+  * MaxPooling2
+    * Resizes the output image
+    * Takes 2x2 area of a image and chooses the max value in each area
+    * Shrinks the image by a factor of two
+    * After shrinking usually the images are used for additional filters (Conv2D) in order to train on smaller scales to find more patterns
+  
+  * Flatten
+    * Because we will be using Dense next, we need to use Flatten to reduce the number of dimensions to one dimension
+  
+  * Dense
+    * Dense layers are hidden layers that use different acitvation functions to find the weights of each parameter of the image in order to appropriately learn the images
+
+  * Dropout
+    * Usually set to 40%, which means that 40% of the parameters that go into the Dropout are set to zero,
+    * This helps the model not overfit
+
+This leads us to having 3,940,000 differnt parameters that our model is using and going throught in order to train on the images.
+
+## Evaluating Classification
+   <img style="float: center;" src="https://drive.google.com/uc?id=18k7DyV5mfu_aaZ_s4G6EaYuvUwx1ADY7" width="500" height="600" >
+   <img style="float: center;" src="https://drive.google.com/uc?id=1EeRqBK6PLqbDEkd4Z6Zw3gdplpkQ4E5O" width="500" height="600">
+  
+* Here we see that the training accuracy and loss is getting better with time but the spikes show that the models are not overfitting
  
+   <img style="float: center;" src="https://drive.google.com/uc?id=1LFUbMEG7nBBZQb_vm6bKrbVvUYVznb7E" width="400" height="500">
+   <img style="float: center;" src="https://drive.google.com/uc?id=1O4x9Q2m_tNNVq8C-4ERx8uwpXWf6a4Ye" width="600" height="300">
 
-# Summary
+   * The image classification model shows that the simple control model is not that good at identifing the images.
 
-The Capstone Project and project review are the most critical part of the program. They give you a chance to both bring together all the skills you've learned into realistic projects and to practice key "business judgement" and communication skills that you otherwise might not get as much practice with.  Most importantly, they provide employers with very strong signal about your technical abilities, and allow you to show the world what an amazing Data Scientist you've become!
+</details>  
+  
 
-The projects are serious and important. They are not graded, but they can be passed and they can be failed. Take the project seriously, put the time in, ask for help from your peers or instructors early and often if you need it, and treat the review as a job interview and you'll do great. We're rooting for you to succeed and we're only going to ask you to take a review again if we believe that you need to. We'll also provide open and honest feedback so you can improve as quickly and efficiently as possible.
 
-We don't expect you to remember all of the terms or to get all of the answers right. If in doubt, be honest. If you don't know something, say so. If you can't remember it, just say so. It's very unusual for someone to complete a project review without being asked a question they're unsure of, we know you might be nervous which may affect your performance. Just be as honest, precise and focused as you can be, and you'll do great!
+# Experimental
+
+<details>
+  <summary>Click to read about modeling the experimental data! </summary>
+  
+
+<img  src="https://drive.google.com/uc?id=1XjcRJuNTI7B7AsZrNIg4bRJ7_yuqr4lV" width="300" height="400">
+<img  src="https://drive.google.com/uc?id=1L-FxmT7JPv7IhhABZ3ceiI_f_5o8HK8f" width="300" height="400">
+
+* Using these augmented images that are blurred as our input into the image classification. Instead of the original (focused) images we are using the images recreated by our autoencoder.
+
+</details>  
+
+<details>
+  <summary>Click to read about modeling the experimental data for image classification! </summary>
+  
+  ## Modeling
+  To model our data effectively; we used the same image classifier throughout the experiment. 
+
+   <img style="float: center;" src="https://drive.google.com/uc?id=10FL_C81awujhuK9IfHnsxGxTEYqFcKiw" >
+
+
+## Evaluating Classification
+  
+Here we see the training accuracy and loss to get a better idea of what is going on
+ 
+   <img style="float: center;" src="https://drive.google.com/uc?id=1OdcLhcQWxD-Zy3oB3rkMPfMIOHcFH0Xu" width="500" height="600">
+   <img style="float: center;" src="https://drive.google.com/uc?id=1yJWFmObhYEHB6vYhErv0jylouqiQy4Dj" width="500" height="600">
+
+   * As shown above the accuracy of the training data is steadily going up, if the number of epochs is increased would still slowly climb.
+   * The accuracy of the validation data is stagnant. This could mean that the model is overfitting for the triaining data that the new data is confusing it. 
+   * The loss of the model is another indicator that in the current model it is overfitting. Menaing that that the loss of the training data is getting smaller but the validation data is growing due to the model not being familiar with it.
+
+The image classification model shows that the simple image classification with the augmented images does not improve the models ability of classifing the images.
+
+</details>  
+  
+
+
+
+# Interpert
+<details>
+  <summary>Click to read about interperting our results! </summary>
+  
+  ## Interpreting the results
+  * The way to interpret the results, is by reviewing the confusion matrices and classification report of both the images to see how well they had performed. 
+
+<img style="float: left;" src="https://drive.google.com/uc?id=1OZzWsICFEukRUo5evZSQg4aiZnKaHZXo" >
+<img style="float: left;" src="https://drive.google.com/uc?id=1LFUbMEG7nBBZQb_vm6bKrbVvUYVznb7E" >
+
+  * The confusion matrices tells us how well the model performed on the test images by displaying what the model classified the images as based on the accurate labels of the images. 
+  * As shown the confusion matrix of the augmented images, the majority of the images were classified as one type of image which drastically dropped the accuracy and reliability of the images. 
+  * The original image classification seems to have had a more diverse outcome but still was fairly inaccurate.
+
+By observing all the accuracy, loss, and confusion matrices of the model, we are able to infer that augmented images are not capable of increasing the accuracy of the images due to the models overfitting. 
+
+</details>  
+
+
+
+# Future Work
+<details>
+  <summary> Click to future work for image classification! </summary>
+  
+  ## Future work for experimenting with augmented images
+  
+  * Obtain more images of each category will give the model more refrences to learn from 
+  * Create deeper models with more layer that can handle learning for longer periods of time and be more accurate
+  * Attempt to use the encoded part of an images to classify the images instead of the entire image classification on recreated augmented images.
+
+</details>
+
+
+
+
+# Final Project Submission
+
+* Student name: Alisa Radjabova
+* Student pace: Full Time
+* Instructor name: Rafael
+* Blog post URL: 
+* Presentation: 
+* Video : 
+
+
