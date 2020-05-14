@@ -124,8 +124,8 @@ There is a decent amount of images available for each category, but it may impac
 
 <img style="float: center;" src="Images/augmented_images.png">
 
-<img  src='Images/aug_example_1.png'width="300" height="400">
-<img  src='Images/aug_example_2' width="300" height="400">
+<img  src='Images/aug_example_1.png' width="300" height="400">
+<img  src='Images/aug_example_2.png' width="300" height="400">
 
 </details>
 
