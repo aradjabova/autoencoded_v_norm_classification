@@ -68,7 +68,7 @@ This is an unbalanced multi-class classification problem; thought because we hav
 
 When creating a simple image classification there are different methods of making sure how well the machine is learning. 
 
-<img  src="https://drive.google.com/uc?id=1Phv01zz-TsENuX5xDUz31r9s5dW6GvU7">
+<img style="float: center;" src="https://drive.google.com/uc?id=1Phv01zz-TsENuX5xDUz31r9s5dW6GvU7">
 <img  src="https://drive.google.com/uc?id=1r7w9cMA2P5cbNLzT__JaaZ1mgusWFTQN">
 
   * These show how well the model has been learning. The higher the accuracy during training and validation dictates better results
