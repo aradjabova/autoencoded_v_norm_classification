@@ -163,13 +163,13 @@ There is a decent amount of images available for each category, but it may impac
 This leads us to having 3,940,000 differnt parameters that our model is using and going throught in order to train on the images.
 
 ## Evaluating Classification
-<img style="float: center;" src='Images/control_cnn_training_acc.png'>
-<img  src='Images/control_cnn_train_loss.png'>
+<img style="float: center;" src='Images/control_cnn_training_acc.png' width="400" height="500">
+<img  src='Images/control_cnn_train_loss.png' width="400" height="500">
   
 * Here we see that the training accuracy and loss is getting better with time but the spikes show that the models are not overfitting
  
    <img style="float: center;" src="Images/control_cnn_confusion_matrix.png" width="400" height="500">
-   <img style="float: center;" src="Images/simple_cnn_classreport.png" width="600" height="300">
+   <img style="float: center;" src="Images/simple_cnn_classreport.png" width="500" height="300">
 
    * The image classification model shows that the simple control model is not that good at identifing the images.
 
