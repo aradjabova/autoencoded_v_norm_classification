@@ -117,7 +117,7 @@ There is a decent amount of images available for each category, but it may impac
    <img style="float: center;" src="https://drive.google.com/uc?id=1w3WeUWl9PEYkyzdKFXdoiHouYo4IE0Bk" width="400" height="200" >
    <img style="float: center;" src="https://drive.google.com/uc?id=1OjqQwdxPKO6cLeVY1hlUOu_yThE27IEW" width="400" height="200" >
    <img style="float: center;" src="https://drive.google.com/uc?id=1mVKzKjt64HxZiC-O534MsusmoUOcQOnY" width="400" height="200">
-   <img style="float: center;" src="https://drive.google.com/uc?id=1BUKUx4cTK0GS92dawf2nCkSilncdvM-R" width="400" height="200">
+   <img src="https://drive.google.com/uc?id=1BUKUx4cTK0GS92dawf2nCkSilncdvM-R" width="400" height="200">
    </details>
 
 <details>
