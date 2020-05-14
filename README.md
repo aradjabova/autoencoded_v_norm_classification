@@ -47,8 +47,7 @@ This is an unbalanced multi-class classification problem; thought because we hav
   
   ## Autoencoder
     
-<a href="https://ibb.co/5KcTVVJ"><img src="https://i.ibb.co/fD0M77T/mnist-noisy.png" alt="mnist-noisy" border="0"></a>
-
+<img  src="https://drive.google.com/open?id=1DR6ccJJwfJOz4rJuYjj9v5mZ4-UCsP6Q">
 
   * Here you can see that the original images (top) that are inputed are condensed and then reblown into blurry images of it self (bottom).
 
