@@ -168,7 +168,7 @@ This leads us to having 3,940,000 differnt parameters that our model is using an
   
 * Here we see that the training accuracy and loss is getting better with time but the spikes show that the models are not overfitting
  
-   <img style="float: center;" src="Images/control_cnn_confusion_matrix.png" width="400" height="500">
+   <img style="float: center;" src="Images/control_cnn_confusion_matrix.png" width="500" height="500">
    <img style="float: center;" src="Images/simple_cnn_classreport.png" width="500" height="300">
 
    * The image classification model shows that the simple control model is not that good at identifing the images.
@@ -203,8 +203,8 @@ This leads us to having 3,940,000 differnt parameters that our model is using an
   
 Here we see the training accuracy and loss to get a better idea of what is going on
  
-   <img style="float: center;" src="Images/aug_then_cnn_train_acc.png" width="500" height="600">
-   <img style="float: center;" src="Images/aug_then_cnn_train_loss.png" width="500" height="600">
+   <img style="float: center;" src="Images/aug_then_cnn_train_acc.png"  width="400" height="500">
+   <img style="float: center;" src="Images/aug_then_cnn_train_loss.png"  width="400" height="500">
 
    * As shown above the accuracy of the training data is steadily going up, if the number of epochs is increased would still slowly climb.
    * The accuracy of the validation data is stagnant. This could mean that the model is overfitting for the triaining data that the new data is confusing it. 
@@ -224,8 +224,8 @@ The image classification model shows that the simple image classification with t
   ## Interpreting the results
   * The way to interpret the results, is by reviewing the confusion matrices and classification report of both the images to see how well they had performed. 
 
-<img style="float: left;" src="Images/aug_then_cnn_confusion_matrix.png" >
-<img style="float: left;" src="Images/control_cnn_confusion_matrix.png" >
+<img style="float: left;" src="Images/aug_then_cnn_confusion_matrix.png"  width="400" height="500">
+<img style="float: left;" src="Images/control_cnn_confusion_matrix.png" width="400" height="500" >
 
   * The confusion matrices tells us how well the model performed on the test images by displaying what the model classified the images as based on the accurate labels of the images. 
   * As shown the confusion matrix of the augmented images, the majority of the images were classified as one type of image which drastically dropped the accuracy and reliability of the images. 
