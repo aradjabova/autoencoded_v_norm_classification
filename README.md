@@ -67,7 +67,7 @@ This is an unbalanced multi-class classification problem; thought because we hav
 
 When creating a simple image classification there are different methods of making sure how well the machine is learning. 
 
-<img style="float: center;" src='Images/mnist_training_acc.png'>
+<img style="float: center;" src='Images/mnist_traininng_acc.png'>
 <img  src='Images/mnist_training loss.png'>
 
   * These show how well the model has been learning. The higher the accuracy during training and validation dictates better results
@@ -102,7 +102,7 @@ The MNIST dataset is used in order to complete the trial code. The evaluations o
   ## Dataset
   The kaggle data is a dataset of images of building, forest, glacier, mountain, sea and street.
 
-   <img style="float: center;" src="https://drive.google.com/uc?id=1tpWgffkIFDqwUr13JlCK8UrgTHmZAjoz" >
+   <img style="float: center;" src='Images/number_of_images_kaggle.png' >
 
 There is a decent amount of images available for each category, but it may impact the amount that can be learned from the current amount of images.
 
@@ -110,22 +110,22 @@ There is a decent amount of images available for each category, but it may impac
 
   <details>
     <summary>Click to view examples of the images in the dataset
-    </summary>
-   <img src="https://drive.google.com/uc?id=1uW7i_tVnzfgaX2BxNgtGIGPxc95Xvpe5" width="400" height="200" >
-   <img style="float: center;" src="https://drive.google.com/uc?id=1EXl96CvTaTP0xOrmMunCnUVtOt6Ok3d5" width="400" height="200" >
-   <img style="float: center;" src="https://drive.google.com/uc?id=1w3WeUWl9PEYkyzdKFXdoiHouYo4IE0Bk" width="400" height="200" >
-   <img style="float: center;" src="https://drive.google.com/uc?id=1OjqQwdxPKO6cLeVY1hlUOu_yThE27IEW" width="400" height="200" >
-   <img style="float: center;" src="https://drive.google.com/uc?id=1mVKzKjt64HxZiC-O534MsusmoUOcQOnY" width="400" height="200">
-   <img src="https://drive.google.com/uc?id=1BUKUx4cTK0GS92dawf2nCkSilncdvM-R" width="400" height="200">
+    </summary> 
+   <img src='Images/kaggle_buildings.png' width="400" height="200" >
+   <img style="float: center;" src='Images/kaggle_forest.png' width="400" height="200" >
+   <img style="float: center;" src='Images/kaggle_glacier.png' width="400" height="200" >
+   <img style="float: center;" src='Images/kaggle_mountain.png' width="400" height="200" >
+   <img style="float: center;" src='Images/kaggle_sea.png' width="400" height="200">
+   <img src='Images/kaggle_street.png' width="400" height="200">
    </details>
 
 <details>
 <summary>Click to view the control image autoencoder!</summary>
 
-<img style="float: center;" src="https://drive.google.com/uc?id=1sdql_R9KtWm3nkFY4G6D9Zzqzu2zp-8N">
+<img style="float: center;" src="Images/augmented_images.png">
 
-<img  src="https://drive.google.com/uc?id=1XjcRJuNTI7B7AsZrNIg4bRJ7_yuqr4lV" width="300" height="400">
-<img  src="https://drive.google.com/uc?id=1L-FxmT7JPv7IhhABZ3ceiI_f_5o8HK8f" width="300" height="400">
+<img  src='Images/aug_example_1.png'width="300" height="400">
+<img  src='Images/aug_example_2' width="300" height="400">
 
 </details>
 
@@ -137,7 +137,7 @@ There is a decent amount of images available for each category, but it may impac
   ## Modeling
   To model our data effectively; we created a image classifier with few simple layers.
 
-   <img style="float: center;" src="https://drive.google.com/uc?id=10FL_C81awujhuK9IfHnsxGxTEYqFcKiw" >
+   <img style="float: center;" src="Images/control_cnn_simple.png" >
 
   * Conv2D 
 
@@ -163,13 +163,13 @@ There is a decent amount of images available for each category, but it may impac
 This leads us to having 3,940,000 differnt parameters that our model is using and going throught in order to train on the images.
 
 ## Evaluating Classification
-   <img style="float: center;" src="https://drive.google.com/uc?id=18k7DyV5mfu_aaZ_s4G6EaYuvUwx1ADY7" width="500" height="600" >
-   <img style="float: center;" src="https://drive.google.com/uc?id=1EeRqBK6PLqbDEkd4Z6Zw3gdplpkQ4E5O" width="500" height="600">
+<img style="float: center;" src='Images/control_cnn_training_acc.png'>
+<img  src='Images/control_cnn_train_loss.png'>
   
 * Here we see that the training accuracy and loss is getting better with time but the spikes show that the models are not overfitting
  
-   <img style="float: center;" src="https://drive.google.com/uc?id=1LFUbMEG7nBBZQb_vm6bKrbVvUYVznb7E" width="400" height="500">
-   <img style="float: center;" src="https://drive.google.com/uc?id=1O4x9Q2m_tNNVq8C-4ERx8uwpXWf6a4Ye" width="600" height="300">
+   <img style="float: center;" src="Images/control_cnn_confusion_matrix.png" width="400" height="500">
+   <img style="float: center;" src="Images/simple_cnn_classreport.png" width="600" height="300">
 
    * The image classification model shows that the simple control model is not that good at identifing the images.
 
