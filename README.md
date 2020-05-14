@@ -183,8 +183,8 @@ This leads us to having 3,940,000 differnt parameters that our model is using an
   <summary>Click to read about modeling the experimental data! </summary>
   
 
-<img  src="https://drive.google.com/uc?id=1XjcRJuNTI7B7AsZrNIg4bRJ7_yuqr4lV" width="300" height="400">
-<img  src="https://drive.google.com/uc?id=1L-FxmT7JPv7IhhABZ3ceiI_f_5o8HK8f" width="300" height="400">
+<img  src="Images/aug_example_1.png" width="300" height="400">
+<img  src="Images/aug_example_2.png" width="300" height="400">
 
 * Using these augmented images that are blurred as our input into the image classification. Instead of the original (focused) images we are using the images recreated by our autoencoder.
 
@@ -196,15 +196,15 @@ This leads us to having 3,940,000 differnt parameters that our model is using an
   ## Modeling
   To model our data effectively; we used the same image classifier throughout the experiment. 
 
-   <img style="float: center;" src="https://drive.google.com/uc?id=10FL_C81awujhuK9IfHnsxGxTEYqFcKiw" >
+   <img style="float: center;" src="Images/control_cnn_simple.png" >
 
 
 ## Evaluating Classification
   
 Here we see the training accuracy and loss to get a better idea of what is going on
  
-   <img style="float: center;" src="https://drive.google.com/uc?id=1OdcLhcQWxD-Zy3oB3rkMPfMIOHcFH0Xu" width="500" height="600">
-   <img style="float: center;" src="https://drive.google.com/uc?id=1yJWFmObhYEHB6vYhErv0jylouqiQy4Dj" width="500" height="600">
+   <img style="float: center;" src="Images/aug_then_cnn_train_acc.png" width="500" height="600">
+   <img style="float: center;" src="Images/aug_then_cnn_train_loss.png" width="500" height="600">
 
    * As shown above the accuracy of the training data is steadily going up, if the number of epochs is increased would still slowly climb.
    * The accuracy of the validation data is stagnant. This could mean that the model is overfitting for the triaining data that the new data is confusing it. 
@@ -224,8 +224,8 @@ The image classification model shows that the simple image classification with t
   ## Interpreting the results
   * The way to interpret the results, is by reviewing the confusion matrices and classification report of both the images to see how well they had performed. 
 
-<img style="float: left;" src="https://drive.google.com/uc?id=1OZzWsICFEukRUo5evZSQg4aiZnKaHZXo" >
-<img style="float: left;" src="https://drive.google.com/uc?id=1LFUbMEG7nBBZQb_vm6bKrbVvUYVznb7E" >
+<img style="float: left;" src="Images/aug_then_cnn_confusion_matrix.png" >
+<img style="float: left;" src="Images/control_cnn_confusion_matrix.png" >
 
   * The confusion matrices tells us how well the model performed on the test images by displaying what the model classified the images as based on the accurate labels of the images. 
   * As shown the confusion matrix of the augmented images, the majority of the images were classified as one type of image which drastically dropped the accuracy and reliability of the images. 
