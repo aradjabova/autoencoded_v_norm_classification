@@ -23,7 +23,8 @@ https://www.kaggle.com/puneet6060/intel-image-classification/version/2#20060.jpg
     
 
 <img  src="https://drive.google.com/uc?id=1m58DO3twhgExsLLVtayU4MH2Rzzb3XCT">
-![Actual Footage of you seeing the light at the end of the tunnel](/Images/number_of_images_kaggle.png)
+
+<img src='Images/number_of_images_kaggle.png'>
 
 
   * Fourtunately, the dataset has plenty of images and there was no cleaning, creating required.
