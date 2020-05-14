@@ -21,9 +21,6 @@ https://www.kaggle.com/puneet6060/intel-image-classification/version/2#20060.jpg
   * We have gathered the data from https://keras.io/api/datasets/mnist/
   * This is a dataset of 60,000 28x28 grayscale images of the 10 digits, along with a test set of 10,000 images.
     
-
-<img  src="https://drive.google.com/uc?id=1m58DO3twhgExsLLVtayU4MH2Rzzb3XCT">
-
 <img src='Images/number_of_images_kaggle.png'>
 
 
