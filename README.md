@@ -123,7 +123,7 @@ There is a decent amount of images available for each category, but it may impac
 <details>
 <summary>Click to view the control image autoencoder!</summary>
 
-<img  src="https://drive.google.com/uc?id=1sdql_R9KtWm3nkFY4G6D9Zzqzu2zp-8N">
+<img style="float: center;" src="https://drive.google.com/uc?id=1sdql_R9KtWm3nkFY4G6D9Zzqzu2zp-8N">
 
 <img  src="https://drive.google.com/uc?id=1XjcRJuNTI7B7AsZrNIg4bRJ7_yuqr4lV" width="300" height="400">
 <img  src="https://drive.google.com/uc?id=1L-FxmT7JPv7IhhABZ3ceiI_f_5o8HK8f" width="300" height="400">
