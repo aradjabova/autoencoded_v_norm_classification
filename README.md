@@ -46,13 +46,13 @@ This is an unbalanced multi-class classification problem; thought because we hav
   
   ## Autoencoder
     
-<img  src="https://drive.google.com/uc?id=1DR6ccJJwfJOz4rJuYjj9v5mZ4-UCsP6Q">
+<img  src='Images/mnist_autoencoded.png'>
 
   * Here you can see that the original images (top) that are inputed are condensed and then reblown into blurry images of it self (bottom).
 
 
 #### Noisy Autoencoder
-<img  src="https://drive.google.com/uc?id=1b6YiWQBs7G2L83gpIdY5g5GQPD04E_Ki">
+<img  src='Images/mnist_noisy.png'>
 
   * Here we can see that the "noisy" input (bottom), meaning having additional pixels added, outputs clean images simlar to the original images
 
@@ -67,21 +67,21 @@ This is an unbalanced multi-class classification problem; thought because we hav
 
 When creating a simple image classification there are different methods of making sure how well the machine is learning. 
 
-<img style="float: center;" src="https://drive.google.com/uc?id=1Phv01zz-TsENuX5xDUz31r9s5dW6GvU7">
-<img  src="https://drive.google.com/uc?id=1r7w9cMA2P5cbNLzT__JaaZ1mgusWFTQN">
+<img style="float: center;" src='Images/mnist_training_acc.png'>
+<img  src='Images/mnist_training loss.png'>
 
   * These show how well the model has been learning. The higher the accuracy during training and validation dictates better results
   * Lower loss shows that the amount of error is decreasing
 
 #### Confusion Matrix
 
-<img  src="https://drive.google.com/uc?id=1SVQ0WGCXWRKc-4RhvV0t4LlBFgfXi9_f" align="middle">
+<img  src='Images/mnist_confusion_matrix.png' align="middle">
 
   * These are a great visual representation of how well the model is performing and learning.
   * The diagnoal line of the confusion matrix indicates the accurately labeled images.
 
 #### Classification Report
-<img  src="https://drive.google.com/uc?id=1reDBGIK1_qEi3qW9D0V-ePj3k0QzqgfC" >
+<img  src='Images/mnist_classification_report.png' >
 
 * Another way of seeing how well the images are being identified.
 
