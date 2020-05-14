@@ -112,7 +112,7 @@ There is a decent amount of images available for each category, but it may impac
   <details>
     <summary>Click to view examples of the images in the dataset
     </summary>
-   <img style="float: center;" src="https://drive.google.com/uc?id=1uW7i_tVnzfgaX2BxNgtGIGPxc95Xvpe5" width="400" height="200" >
+   <img src="https://drive.google.com/uc?id=1uW7i_tVnzfgaX2BxNgtGIGPxc95Xvpe5" width="400" height="200" >
    <img style="float: center;" src="https://drive.google.com/uc?id=1EXl96CvTaTP0xOrmMunCnUVtOt6Ok3d5" width="400" height="200" >
    <img style="float: center;" src="https://drive.google.com/uc?id=1w3WeUWl9PEYkyzdKFXdoiHouYo4IE0Bk" width="400" height="200" >
    <img style="float: center;" src="https://drive.google.com/uc?id=1OjqQwdxPKO6cLeVY1hlUOu_yThE27IEW" width="400" height="200" >
