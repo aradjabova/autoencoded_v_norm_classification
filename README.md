@@ -14,7 +14,7 @@ https://www.kaggle.com/puneet6060/intel-image-classification/version/2#20060.jpg
 
 ## Trial dataset MNIST
 
-<details>
+
   <summary>Click to read about the trail dataset! </summary>
   
   ## Obtaining
@@ -38,7 +38,7 @@ Using the OSEM process we will build an autoencoder and an image classifier.
 
 This is an unbalanced multi-class classification problem; thought because we have plenty of each image, we will not need to create more images.
 
-</details>
+
 
 
 <details>
