@@ -1,9 +1,9 @@
 
 <a href="https://colab.research.google.com/github/aradjabova/dsc-capstone-project-v2-online-ds-ft-120919/blob/master/ReadME.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-# Experiment: Autoencoded Images  Vs. Original Images for Classification
+# Experiment: Autoencoded Images Vs. Original Images for Classification
 
-Created a trial code with MNIST dataset and then used the kaggle intel image classificaiton dataset for experiment.
+Created a trial experiment with MNIST dataset and then used the kaggle intel image classificaiton dataset for experiment.
 https://www.kaggle.com/puneet6060/intel-image-classification/version/2#20060.jpg 
 
 
