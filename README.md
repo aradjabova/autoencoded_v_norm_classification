@@ -1,7 +1,8 @@
 
 <a href="https://colab.research.google.com/github/aradjabova/dsc-capstone-project-v2-online-ds-ft-120919/blob/master/ReadME.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-# Experiment: Autoencoded Images Vs. Original Images for Classification
+# Experiment: <br>
+Autoencoded Images Vs. Original Images for Classification
 
 Created a trial experiment with MNIST dataset and then used the kaggle intel image classificaiton dataset for experiment.
 https://www.kaggle.com/puneet6060/intel-image-classification/version/2#20060.jpg 
@@ -29,7 +30,7 @@ https://www.kaggle.com/puneet6060/intel-image-classification/version/2#20060.jpg
 Using the OSEM process we will build an autoencoder and an image classifier.
 
 ### Autoencoder
-  * Is used to condense the information in the images
+  * Is used to condense the information in the images simpler or simplere images
   * Condensing the information allows the autoencoder learn the most important parts of an image
   * Once the images are condensed the decoder will use the learned information to expand the images to the original size
 
@@ -217,7 +218,7 @@ The image classification model shows that the simple image classification with t
 
 
 
-# Interpert
+# Interpertation
 <details>
   <summary>Click to read about interperting our results! </summary>
   
